@@ -96,18 +96,18 @@
 
 
   @media (min-width: 100px) {
-  .modal {
+    .modal {
       padding-left: 10px;
       padding-right: 10px;
     }
-  } 
+  }
 
   /* Modal Content */
   .modal-content {
-    background-color: #fefefe;
+    /*  background-color: #fefefe; 
+   border: 1px solid #888; */
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 100%;
   }
 
@@ -125,6 +125,52 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* Buttoes servicos*/
+  .buttonn {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+  }
+
+  /*Select Multi page 2*/
+
+  .select {
+    max-width: 300px;
+    gap: 5px;
+  }
+
+  .select__item {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    background: #eeeeee;
+    transition: 0.1s;
+  }
+
+  .select__item--selected {
+    background: #009578;
+    color: #ffffff;
+  }
+  
 </style>
 
 
@@ -169,20 +215,45 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
 
-    <form id="regForm" action="/action_page.php">
-      <h1>Register:</h1>
-      <!-- One "tab" for each step in the form: -->
-      <div class="tab">Name:
-        <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-        <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+    <form id="regForm" action="/">
+      <span class="close">&times;</span>
+      <h1>Escolha o servico que deseja agendar:</h1>
+      <!-- Lista de Categorias e Servicos: -->
+      <div class="tab">
+        <span>Ortopedia:</span>
+        <p>
+          <button class="buttonn button1">
+            <li style="text-decoration: none;">Raio-X</li>
+            <li>500 MT</li>
+          </button>
+        </p>
+        <p>
+          <button class="buttonn button1">
+            <li style="text-decoration: none;">Raio-X</li>
+            <li>500 MT</li>
+          </button>
+        </p>
+        <span>Radiologia:</span>
+        <p>
+          <button class="buttonn button1">
+            <li style="text-decoration: none;">Raio-X</li>
+            <li>500 MT</li>
+          </button>
+        </p>
       </div>
+
       <div class="tab">Contact Info:
-        <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-        <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+        <select name="language" class="custom-select" multiple>
+          <option class="">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="sql">SQL</option>
+          <option value="kotlin">Kotlin</option>
+        </select>
       </div>
+
       <div class="tab">Birthday:
         <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
         <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
@@ -212,6 +283,66 @@
 
 
 <script>
+  class CustomSelect {
+    constructor(originalSelect) {
+      this.originalSelect = originalSelect;
+      this.customSelect = document.createElement("div");
+      this.customSelect.classList.add("select");
+
+      this.originalSelect.querySelectorAll("option").forEach((optionElement) => {
+        const itemElement = document.createElement("div");
+
+        itemElement.classList.add("select__item");
+        itemElement.textContent = optionElement.textContent;
+        this.customSelect.appendChild(itemElement);
+
+        if (optionElement.selected) {
+          this._select(itemElement);
+        }
+
+        itemElement.addEventListener("click", () => {
+          if (
+            this.originalSelect.multiple &&
+            itemElement.classList.contains("select__item--selected")
+          ) {
+            this._deselect(itemElement);
+          } else {
+            this._select(itemElement);
+          }
+        });
+      });
+
+      this.originalSelect.insertAdjacentElement("afterend", this.customSelect);
+      this.originalSelect.style.display = "none";
+    }
+
+    _select(itemElement) {
+      const index = Array.from(this.customSelect.children).indexOf(itemElement);
+
+      if (!this.originalSelect.multiple) {
+        this.customSelect.querySelectorAll(".select__item").forEach((el) => {
+          el.classList.remove("select__item--selected");
+        });
+      }
+
+      this.originalSelect.querySelectorAll("option")[index].selected = true;
+      itemElement.classList.add("select__item--selected");
+    }
+
+    _deselect(itemElement) {
+      const index = Array.from(this.customSelect.children).indexOf(itemElement);
+
+      this.originalSelect.querySelectorAll("option")[index].selected = false;
+      itemElement.classList.remove("select__item--selected");
+    }
+  }
+
+  document.querySelectorAll(".custom-select").forEach((selectElement) => {
+    new CustomSelect(selectElement);
+  });
+
+
+
   // Get the modal
   var modal = document.getElementById("myModal");
 

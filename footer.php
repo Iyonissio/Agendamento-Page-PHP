@@ -100,7 +100,10 @@
             <p>suporte@reservaja.co.mz</p>
         </div>
         <div class="footer-direita">
-          <form action="https://formspree.io/f/xgerznrj" method="POST">
+        <div class="footer-logo">
+               <a href="https://www.instagram.com/reservajamz/"><img src="image/Play Store e App Store.png" alt="foto" /></a> 
+        </div>
+        <!--<form action="https://formspree.io/f/xgerznrj" method="POST">
             <div class="footer-titulo">
                 <h3>SUBSCREVA A NEWSLATTER</h3>
             </div>
@@ -110,7 +113,7 @@
             <div class="subscrever">
               <button type="submit">subscrever</button> 
             </div>
-          </form>           
+          </form> -->          
       </div>
   </footer>
   <div class="footer-final">
