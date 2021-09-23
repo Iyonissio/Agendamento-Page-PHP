@@ -30,7 +30,11 @@
           </a>
         </a></li>
         </li>
+        
         <li class="iten button"><a href="empresa.php">Empresa</a></li>
+
+        <li class="iten"><a href="#">
+          <img class="logo-user" src="image/usuário foto.svg" /></a>
         <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
