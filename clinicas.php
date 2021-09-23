@@ -19,8 +19,7 @@
 		display: relative;
 		max-width: 100%;
 		margin: auto;
-		position: relative;
-		overflow: hidden;
+		position: relative;	
 	}
 
 	.slide-container .slide {
@@ -52,7 +51,6 @@
 		font-size: 20px;
 		transition: all 0.6s ease;
 		border-radius: 0 3px 3px 0;
-		user-select: none;
 	}
 
 	.slide-container .antes:hover,
@@ -74,49 +72,99 @@
 		padding-right: 0px;
 	}
 
-	.textoo {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.ver-empresa {
+		cursor: pointer;
+		position: absolute;
+		top: 70%;
+		left: 45%;
+		color: white;
+		font-size: 16px;
+		text-decoration: none;
+		background-color: #F1A300;
+		padding: 8px 20px;
+		border-radius: 5px;
+	}
+
+	.info-destaque-nome {
+		cursor: pointer;
+		position: absolute;
+		top: 55%;
+		left:46%;
+		color: white;
+	}
+
+	.info-destaque-endereco {
 		cursor: pointer;
 		position: absolute;
 		top: 60%;
-		padding: 16px;
+		left: 40%;
 		color: white;
-		font-weight: bold;
-		font-size: 20px;
-		text-decoration: none;
-		border: none;
-		background-color: #F1A300;
-		color: #fff;
-		padding: 8px 20px;
-		border-radius: 5px;
-		padding-bottom: 12px;
+	}
+
+	.em-destaque {
+		cursor: pointer;
+		position: absolute;
+		top: 20%;
+		left: 33%;
+		color: white;
 	}
 </style>
 
+<!--Destaque Slider-->
 <div class="content">
 	<div class="slide-container">
+
+		<!--Imagem  Estabelecimento 1 -->
 		<div class="slide fade">
-			<img src="image/salao1.jpg" alt=''>
+			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
+			<a href="#"><img src="image/salao1.jpg" alt=''></a>
+			<div class="info-destaque-nome">
+				<h3>Nome do Salao</h3>
+			</div>
+			<div class="info-destaque-endereco">
+				<p><strong>Endereco:</strong> 930 Av. Julius Nyerere, Maputo</p>
+			</div>
+			<div class="ver-empresa">
+				<h4>Ver Estabelecimento</h4>
+			</div>
 		</div>
+		<!-- Imagem Estabelecimento 2 -->
 		<div class="slide fade">
-			<img src='https://wallpapercave.com/wp/wp2650489.jpg' alt=''>
+			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
+			<a href="#"></a><img src="image/Salao2.jpg" alt=''>
+			<div class="info-destaque-nome">
+				<h3>Nome do Salao</h3>
+			</div>
+			<div class="info-destaque-endereco">
+				<p><strong>Endereco:</strong> 930 Av. Julius Nyerere, Maputo</p>
+			</div>
+			<div class="ver-empresa">
+				<h4>Ver Estabelecimento</h4>
+			</div>
 		</div>
-		<div class="textoo">
-			<h3>Nome do Salao</h3>
+
+		<!-- Imagem Estabelecimento 3 -->
+		<div class="slide fade">
+			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
+			<a href="#"></a><img src="image/salao1.jpg" alt=''>
+			<div class="info-destaque-nome">
+				<h3>Nome do Salao</h3>
+			</div>
+			<div class="info-destaque-endereco">
+				<p><strong>Endereco:</strong> 930 Av. Julius Nyerere, Maputo</p>
+			</div>
+			<div class="ver-empresa">
+				<h4>Ver Estabelecimento</h4>
+			</div>
 		</div>
-		<div class="textoo">
-			<a>Ver</a>
-		</div>
-		<p><strong>Address:</strong> 930 Av. Julius Nyerere, Maputo</p>
-		
+		<!--<h1 class="em-destaque">Estabelecimentos em Destaque</h1> -->
 		<a href="#" class="antes" title="antes">&#10094</a>
 		<a href="#" class="proximo" title="proximo">&#10095</a>
 	</div>
 </div>
 
 
+<!-- Destaque Fim -->
 
 <main>
 	<div class="area_estabelecimento">
@@ -306,7 +354,9 @@
 			showItems();
 			check();
 		}
-		// header js
+
+
+		// Destaque / header js
 		var currentSlide = 0;
 		const slides = document.querySelectorAll(".slide")
 
@@ -320,7 +370,7 @@
 		document.addEventListener("DOMContentLoaded", init(currentSlide))
 		setInterval(() => {
 			proximo()
-		}, 1000);
+		}, 3000);
 		const proximo = () => {
 			currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
 			init(currentSlide)
