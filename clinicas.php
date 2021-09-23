@@ -73,23 +73,45 @@
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+
+	.textoo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		position: absolute;
+		top: 60%;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		text-decoration: none;
+		border: none;
+		background-color: #F1A300;
+		color: #fff;
+		padding: 8px 20px;
+		border-radius: 5px;
+		padding-bottom: 12px;
+	}
 </style>
+
 <div class="content">
 	<div class="slide-container">
 		<div class="slide fade">
-			<img src='https://wallpapercave.com/wp/wp2650516.jpg' alt=''>
+			<img src="image/salao1.jpg" alt=''>
 		</div>
 		<div class="slide fade">
 			<img src='https://wallpapercave.com/wp/wp2650489.jpg' alt=''>
 		</div>
-		<div class="slide fade">
-			<img src='https://wallpapercave.com/wp/wp2650491.jpg' alt=''>
+		<div class="textoo">
+			<h3>Nome do Salao</h3>
 		</div>
-		<div class="slide fade">
-			<img src='https://wallpapercave.com/wp/wp2650498.jpg' alt=''>
+		<div class="textoo">
+			<a>Ver</a>
 		</div>
-
-		<a href="#" class="antes" title="antesious">&#10094</a>
+		<p><strong>Address:</strong> 930 Av. Julius Nyerere, Maputo</p>
+		
+		<a href="#" class="antes" title="antes">&#10094</a>
 		<a href="#" class="proximo" title="proximo">&#10095</a>
 	</div>
 </div>
@@ -278,16 +300,13 @@
 				}
 				page.innerHTML = index;
 			}
-
-
 		}
 
 		window.onload = function() {
 			showItems();
 			check();
 		}
-
-
+		// header js
 		var currentSlide = 0;
 		const slides = document.querySelectorAll(".slide")
 
@@ -301,7 +320,7 @@
 		document.addEventListener("DOMContentLoaded", init(currentSlide))
 		setInterval(() => {
 			proximo()
-		}, 5000);
+		}, 1000);
 		const proximo = () => {
 			currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
 			init(currentSlide)

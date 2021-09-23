@@ -1,4 +1,4 @@
-<?php require_once('header_logado.php') ?>
+ <?php require_once('header_logado.php') ?>
     <main>
     <div class="area_estabelecimento">
         <div class="area_informacao_esquerda">
