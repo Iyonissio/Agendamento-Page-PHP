@@ -19,7 +19,7 @@
 		display: relative;
 		max-width: 100%;
 		margin: auto;
-		position: relative;	
+		position: relative;
 	}
 
 	.slide-container .slide {
@@ -89,7 +89,7 @@
 		cursor: pointer;
 		position: absolute;
 		top: 55%;
-		left:46%;
+		left: 46%;
 		color: white;
 	}
 
@@ -108,6 +108,124 @@
 		left: 33%;
 		color: white;
 	}
+
+	@media (min-width: 100px) {
+		.ver-empresa {
+			cursor: pointer;
+			position: absolute;
+			top: 70%;
+			left: 25%;
+			color: white;
+			font-size: 16px;
+			text-decoration: none;
+			background-color: #F1A300;
+			padding: 8px 20px;
+			border-radius: 5px;
+		}
+
+		.info-destaque-nome {
+			cursor: pointer;
+			position: absolute;
+			top: 55%;
+			left: 25%;
+			color: white;
+		}
+
+		.info-destaque-endereco {
+			cursor: pointer;
+			position: absolute;
+			top: 60%;
+			left: 9%;
+			color: white;
+		}
+
+		.em-destaque {
+			cursor: pointer;
+			position: absolute;
+			top: 20%;
+			left: 33%;
+			color: white;
+		}
+	}
+
+	@media (min-width: 460px) and (max-width: 899px) {
+		.ver-empresa {
+			cursor: pointer;
+			position: absolute;
+			top: 70%;
+			left: 25%;
+			color: white;
+			font-size: 16px;
+			text-decoration: none;
+			background-color: #F1A300;
+			padding: 8px 20px;
+			border-radius: 5px;
+		}
+
+		.info-destaque-nome {
+			cursor: pointer;
+			position: absolute;
+			top: 55%;
+			left: 40%;
+			color: white;
+		}
+
+		.info-destaque-endereco {
+			cursor: pointer;
+			position: absolute;
+			top: 60%;
+			left: 30%;
+			color: white;
+		}
+
+		.em-destaque {
+			cursor: pointer;
+			position: absolute;
+			top: 20%;
+			left: 33%;
+			color: white;
+		}
+	}
+
+	@media (min-width: 900px) {
+		.ver-empresa {
+			cursor: pointer;
+			position: absolute;
+			top: 70%;
+			left: 45%;
+			color: white;
+			font-size: 16px;
+			text-decoration: none;
+			background-color: #F1A300;
+			padding: 8px 20px;
+			border-radius: 5px;
+		}
+
+		.info-destaque-nome {
+			cursor: pointer;
+			position: absolute;
+			top: 55%;
+			left: 46%;
+			color: white;
+		}
+
+		.info-destaque-endereco {
+			cursor: pointer;
+			position: absolute;
+			top: 60%;
+			left: 40%;
+			color: white;
+		}
+
+		.em-destaque {
+			cursor: pointer;
+			position: absolute;
+			top: 20%;
+			left: 33%;
+			color: white;
+		}
+	}
+
 </style>
 
 <!--Destaque Slider-->
