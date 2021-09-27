@@ -21,6 +21,50 @@
   <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
 
 </head>
+<style>
+  .dropbtn {
+    background-color: white;;
+    color: white;
+    padding: 1px;
+    font-size: 1px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: white;;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: white;;
+  }
+</style>
 
 <body>
   <!--Navbar-->
@@ -35,31 +79,24 @@
       </li>
 
       <li class="iten button"><a href="empresa.php">Empresa</a></li>
-
       <li class="iten"><a href="#">
-          <img class="logo-user" src="image/usuário foto.svg" id="myBtn"/></a>
+          <div class="dropdown" style="float:right;"> 
+            <button class="dropbtn">
+              <img class="logo-user" src="image/usuário foto.svg" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Nome do Usuario</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </a>
       <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+
     </ul>
   </nav>
 
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <div class="modal-header">
-        <span class="close">&times;</span>
-        <h2>Modal Header</h2>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the Modal Body</p>
-        <p>Some other text...</p>
-      </div>
-      <div class="modal-footer">
-        <h3>Modal Footer</h3>
-      </div>
-    </div>
 
-  </div>
 
   <script>
     const toggle = document.querySelector(".toggle");
@@ -109,30 +146,4 @@
 
 
     /*Modal Login */
-
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
   </script>
