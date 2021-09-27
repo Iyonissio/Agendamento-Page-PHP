@@ -126,15 +126,15 @@
 		.info-destaque-nome {
 			cursor: pointer;
 			position: absolute;
-			top: 55%;
-			left: 25%;
+			top: 45%;
+			left: 30%;
 			color: white;
 		}
 
 		.info-destaque-endereco {
 			cursor: pointer;
 			position: absolute;
-			top: 60%;
+			top: 55%;
 			left: 9%;
 			color: white;
 		}
@@ -153,7 +153,7 @@
 			cursor: pointer;
 			position: absolute;
 			top: 70%;
-			left: 25%;
+			left: 37%;
 			color: white;
 			font-size: 16px;
 			text-decoration: none;
@@ -204,7 +204,7 @@
 		.info-destaque-nome {
 			cursor: pointer;
 			position: absolute;
-			top: 55%;
+			top: 50%;
 			left: 46%;
 			color: white;
 		}
