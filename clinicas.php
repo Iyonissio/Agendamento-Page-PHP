@@ -225,7 +225,6 @@
 			color: white;
 		}
 	}
-
 </style>
 
 <!--Destaque Slider-->
@@ -250,21 +249,6 @@
 		<div class="slide fade">
 			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
 			<a href="#"></a><img src="image/Salao2.jpg" alt=''>
-			<div class="info-destaque-nome">
-				<h3>Nome do Salao</h3>
-			</div>
-			<div class="info-destaque-endereco">
-				<p><strong>Endereco:</strong> 930 Av. Julius Nyerere, Maputo</p>
-			</div>
-			<div class="ver-empresa">
-				<h4>Ver Estabelecimento</h4>
-			</div>
-		</div>
-
-		<!-- Imagem Estabelecimento 3 -->
-		<div class="slide fade">
-			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
-			<a href="#"></a><img src="image/salao1.jpg" alt=''>
 			<div class="info-destaque-nome">
 				<h3>Nome do Salao</h3>
 			</div>
