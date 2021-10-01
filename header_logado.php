@@ -86,8 +86,6 @@
             </button>
             <div class="dropdown-content">
               <a href="#">Nome do Usuario</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
             </div>
           </div>
         </a>

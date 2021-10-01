@@ -230,7 +230,6 @@
 <!--Destaque Slider-->
 <div class="content">
 	<div class="slide-container">
-
 		<!--Imagem  Estabelecimento 1 -->
 		<div class="slide fade">
 			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
