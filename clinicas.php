@@ -1,4 +1,4 @@
-<?php require_once('header_logado.php') ?>
+<?php require_once('header.php') ?>
 <style>
 	body {
 		margin: 0;
@@ -63,29 +63,6 @@
 		right: 1px;
 	}
 
-	.ver-empresa {
-		cursor: pointer;
-		color: white;
-		font-size: 16px;
-		text-decoration: none;
-		background-color: #F1A300;
-		padding: 2px 2px;
-		border-radius: 2px;
-		padding-top: 10px;
-	}
-
-	.info-destaque-nome {
-		cursor: pointer;
-		color: black;
-		font-size: 28px;
-	}
-
-	.info-destaque-endereco {
-		cursor: pointer;
-		color: black;
-		font-size: 18px;
-	}
-
 
 	/* Parte do Hover */
 
@@ -128,14 +105,10 @@
 			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
 			<img src="image/Salao2.jpg" alt="Avatar" class="image">
 			<div class="middle">
-				<div class="info-destaque-nome">
-					<h3>Nome do Salao 1</h3>
-				</div>
-				<div class="info-destaque-endereco">
+				<div class="tabela-info">
+					<h3>Nome do Estabelecimento 1</h3>
 					<p><strong>Endereco:</strong> 930 Av. Julius Nyerere, Maputo</p>
-				</div>
-				<div class="ver-empresa">
-					<h4>Ver Estabelecimento</h4>
+					<a href="sectionClinicaDescricao.php">Agendar</a>
 				</div>
 			</div>
 		</div>
@@ -145,14 +118,10 @@
 			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
 			<img src="image/salao1.jpg" alt="Avatar" class="image">
 			<div class="middle">
-				<div class="info-destaque-nome">
-					<h3>Nome do Salao 2</h3>
-				</div>
-				<div class="info-destaque-endereco">
+				<div class="tabela-info">
+					<h3>Nome do Estabelecimento 2</h3>
 					<p><strong>Endereco:</strong> 930 Av. Julius Nyerere, Maputo</p>
-				</div>
-				<div class="ver-empresa">
-					<h4>Ver Estabelecimento</h4>
+					<a href="sectionClinicaDescricao.php">Agendar</a>
 				</div>
 			</div>
 		</div>
