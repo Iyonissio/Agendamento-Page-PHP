@@ -519,7 +519,7 @@ footer {
 
 .planos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .planos-titulo-geral h1 {
