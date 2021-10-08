@@ -109,9 +109,8 @@
          <h3>PODE BAIXAR A APP</h3>
        </div>
        <div class="footer-logo">
-         <a href="#"><img style="width: 140px; height: 60px;
-          padding-left: 10px;" src="image/AppStore.png" alt="foto" /></a>
-         <a href="#"><img style="width: 150px; height: 70px;" src="image/Play Store.png" alt="foto" /></a>
+         <a href="#"><img style="width: 190px; height: 72px;  object-fit: cover;" src="image/play-store.png" alt="foto" /></a>
+         <a href="#"><img style="width: 190px; height: 72px; object-fit: cover;" src="image/app-store.png" alt="foto" /></a> 
        </div>
        <!--<form action="https://formspree.io/f/xgerznrj" method="POST">
             <div class="footer-titulo">
@@ -132,9 +131,9 @@
        <p>Agendamento Online.</p>
      </div>
      <div class="footer-final-centro">
-       <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
-       <span><a href="https://www.instagram.com/reservajamz/"><i class="fab fa-instagram"></i></a></span>
-       <span><a href="https://www.linkedin.com/in/reservaja/"><i class="fab fa-linkedin"></i></a></span>
+       <span><a href="https://web.facebook.com/Reserva-J%C3%A1-110637704697267/?ref=pages_you_manage"><i class="fab fa-facebook-f"></i></a></span>
+       <span><a href="https://instagram.com/reservaja_?utm_medium=copy_link"><i class="fab fa-instagram"></i></a></span>
+       <span><a href="https://www.linkedin.com/company/reserva-j%C3%A1"><i class="fab fa-linkedin"></i></a></span>
      </div>
 
      <div class="footer-final-direita">

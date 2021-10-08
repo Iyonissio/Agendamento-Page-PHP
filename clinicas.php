@@ -27,13 +27,6 @@
 		width: 100%;
 	}
 
-	.slide-container .slide img {
-		width: 100%;
-		height: 100vh;
-		position: relative;
-		object-fit: cover;
-	}
-
 	.slide-container .antes,
 	.slide-container .proximo {
 		cursor: pointer;
@@ -65,7 +58,9 @@
 
 
 	/* Parte do Hover */
-
+	.slide.fade {
+		width: 800px;
+	}
 
 	.image {
 		opacity: 1;
@@ -75,6 +70,7 @@
 		height: 100vh;
 		transition: .5s ease;
 		backface-visibility: hidden;
+		position: relative;
 	}
 
 	.middle {
@@ -103,7 +99,7 @@
 		<!--Imagem  Estabelecimento 1 -->
 		<div class="slide fade">
 			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
-			<img src="image/Salao2.jpg" alt="Avatar" class="image">
+			<img src="image/Luxos.jpg" alt="Avatar" class="image">
 			<div class="middle">
 				<div class="tabela-info">
 					<h3>Nome do Estabelecimento 1</h3>
@@ -113,6 +109,18 @@
 			</div>
 		</div>
 
+		<!--Imagem  Estabelecimento 2 -->
+		<div class="slide fade">
+			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
+			<img src="image/reservajaa.png" alt="Avatar" class="image">
+			<div class="middle">
+				<div class="tabela-info">
+					<h3>Nome do Estabelecimento 2</h3>
+					<p><strong>Endereco:</strong> 930 Av. Julius Nyerere, Maputo</p>
+					<a href="sectionClinicaDescricao.php">Agendar</a>
+				</div>
+			</div>
+		</div>
 		<!--Imagem  Estabelecimento 2 -->
 		<div class="slide fade">
 			<!-- Coloquei a imagem dentro de um link, assim ao clicar ira a decricao do Estabelecimento -->
