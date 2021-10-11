@@ -184,7 +184,7 @@ input[type=text] {
   }
   .gallery-items img{
     width: 100px;
-    object-fit: cover;
+    object-fit: fill;
   }
   .tabela-info {
     display: flex;
@@ -201,7 +201,7 @@ input[type=text] {
   }
   .gallery-items img{
     width: 300px;
-    object-fit: cover;
+    object-fit: fill;
   }
 }
 
@@ -212,7 +212,7 @@ input[type=text] {
   }
   .gallery-items img{
     width: 300px;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 

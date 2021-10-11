@@ -10,11 +10,6 @@
 		overflow: hidden;
 	}
 
-	.slider-image {
-		width: 100%;
-		overflow: hidden;
-	}
-
 	.slide-container {
 		display: relative;
 		max-width: 100%;
