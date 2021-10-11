@@ -63,7 +63,6 @@
     <div class="paginas_estabelecmentos">
       <span><i class="fab fa-facebook-f"></i></span>
       <span><i class="fab fa-instagram"></i></span>
-      <span><i class="fab fa-linkedin"></i></span>
     </div>
     <div class="button_agendar">
       <button id="myBtn">agendar</button>
