@@ -25,17 +25,15 @@
           buttonTitle: 'saiba mais',
         },
         {
-          image: 'image/dispositivos.svg',
-          title: 'Reservas ao tempo certo.',
-          description: `Através do seu telemóvel ou computador, podes fazer agendamentos a 
-          qualquer hora e lugar. Baixe a aplicação reservajá no Google Play Store ou App Store e siga as instruções.`,
+          image: 'assets/image/2.svg',
+          title: 'Reservas se tornaram muito faceis.',
+          description: `Faça seus agendamentos com certeza de que seu pedido será concretizado`,
           buttonTitle: 'saiba mais',
         },
         {
-          image: 'image/2.svg',
-          title: 'Reservas se tornaram muito faceis.',
-          description: `Faça seus agendamentos com 
-          certeza de que seu pedido será concretizado e sem precisar se deslocar ou efectuar chamadas.`,
+          image: 'assets/image/3.svg',
+          title: 'Quando e Onde estiver.',
+          description: `Faça seus agendamentos com certeza sem precisar se deslocar ou efectuar chamadas.`,
           buttonTitle: 'saiba mais',
         },
         {
