@@ -306,6 +306,10 @@
  			check();
  		}
 
+		 </script>
+
+	<script>
+
  		// Destaque / header js
  		var currentSlide = 0;
  		const slides = document.querySelectorAll(".slide")
